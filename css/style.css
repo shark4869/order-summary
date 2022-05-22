@@ -1,0 +1,157 @@
+:root {
+    /* Primary */
+    --Pale-blue: rgb(224, 232, 255);
+    --Bright-blue: rgb(56, 41, 224);
+    /*  Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+   
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Pale-blue);
+}
+
+.bg__img {
+
+    background:  url("../images/pattern-background-desktop.svg") no-repeat center/cover;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.order {
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 20px rgba(56, 41, 224, 0.1);
+}
+.order__img {
+    width: 100%;
+    height: 150px;
+}
+
+.order__item {
+    margin: 30px 20px 20px;
+}
+
+.order__heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.order__desc {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: var(--Desaturated-blue);
+    text-align: center;
+    font-weight: 500;
+}
+
+.order__wrap {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: var(--Very-pale-blue);
+    
+}
+
+.order__icon {
+    width: 44px;
+    height: 44px;
+   margin: 0 10px;
+}
+
+.order__info {
+    font-size: 1.4rem;
+    margin: 0 auto 0 10px;
+}
+
+.order__name {
+    display: block;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    
+}
+
+.order__price {
+    display: block;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.order__link {
+    
+    margin-right: 10px;
+}
+.order__link a {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--Bright-blue);
+}
+.order__link a:hover {
+    text-decoration: none;
+    color: rgba(56, 41, 224, 0.7);
+}
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+}
+.order__pay {
+    color: #fff;
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(56, 41, 224, 0.2);
+   
+}
+.order__pay:hover {
+    cursor: pointer;
+    background-color: rgba(56, 41, 224, 0.7);
+}
+
+.order__close {
+   
+    color: var(--Desaturated-blue);
+    background-color: transparent;
+   
+}
+.order__close:hover {
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+
+ @media (max-width: 768px) {
+    .bg__img {
+        background:  url("../images/pattern-background-mobile.svg") no-repeat center/cover;
+        
+    }
+} 
